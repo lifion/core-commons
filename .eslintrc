@@ -1,0 +1,6 @@
+{
+  "extends": "./shared/eslint.json",
+  "rules": {
+    "global-require": "off"
+  }
+}

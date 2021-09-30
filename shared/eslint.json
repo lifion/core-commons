@@ -1,0 +1,5 @@
+{
+  "$schema": "https://json.schemastore.org/eslintrc.json",
+  "extends": "lifion",
+  "ignorePatterns": ["coverage", "node_modules", "package-lock.json", "reports"]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "core-commons",
+  "version": "1.0.0",
+  "description": "Lifion's development setup in one command for our public Node.js projects.",
+  "author": "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
+  "maintainers": [
+    "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
+    "Jenny Eckstein <Jenny.Eckstein@ADP.com>"
+  ],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lifion/core-commons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lifion/core-commons/issues"
+  },
+  "homepage": "https://github.com/lifion/core-commons#readme",
+  "main": "bin/cli.js",
+  "bin": {
+    "commons": "./bin/cli.js"
+  },
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "eslint": "./bin/cli.js",
+    "prettier": "./bin/cli.js",
+    "test": "./bin/cli.js"
+  },
+  "dependencies": {
+    "auto-changelog": "^2.3.0",
+    "chalk": "^4.1.2",
+    "check-engines": "^1.5.0",
+    "eslint": "^7.32.0",
+    "eslint-config-lifion": "^2.1.1",
+    "jest": "^27.2.4",
+    "prettier": "^2.4.1",
+    "yargs": "^17.2.1"
+  },
+  "devDependencies": {}
+}
