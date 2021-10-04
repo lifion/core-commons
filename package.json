@@ -21,11 +21,16 @@
   "bin": {
     "commons": "./bin/cli.js"
   },
+  "files": [
+    "lib",
+    "shared"
+  ],
   "engines": {
     "node": ">=14.18.0"
   },
   "scripts": {
     "eslint": "./bin/cli.js",
+    "prepare": "./bin/cli.js",
     "prettier": "./bin/cli.js",
     "test": "./bin/cli.js"
   },

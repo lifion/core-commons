@@ -1,0 +1,6 @@
+#!/bin/sh
+
+set -e
+set -o pipefail
+
+npm run check-types && npm run build-docs && npx --no-install core-commons lint-staged
