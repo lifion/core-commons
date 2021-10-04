@@ -1,6 +1,6 @@
 {
   "name": "core-commons",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "Lifion's development setup in one command for our public Node.js projects.",
   "author": "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
   "maintainers": [
@@ -33,11 +33,15 @@
     "auto-changelog": "^2.3.0",
     "chalk": "^4.1.2",
     "check-engines": "^1.5.0",
+    "cosmiconfig": "^7.0.1",
+    "env-var": "^7.0.1",
     "eslint": "^7.32.0",
-    "eslint-config-lifion": "^2.1.1",
+    "eslint-config-lifion": "^2.2.1",
     "jest": "^27.2.4",
+    "merge-options": "^3.0.4",
     "prettier": "^2.4.1",
-    "yargs": "^17.2.1"
+    "yargs": "^17.2.1",
+    "zx": "^4.2.0"
   },
   "devDependencies": {}
 }

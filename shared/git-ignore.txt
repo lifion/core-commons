@@ -3,5 +3,6 @@
 .nova
 .vscode
 coverage
+lib/**/*.d.ts
 node_modules
 reports

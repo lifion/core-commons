@@ -3,7 +3,8 @@
   "endOfLine": "auto",
   "overrides": [
     { "files": "*.hbs", "options": { "parser": "markdown" } },
-    { "files": ".lintstagedrc", "options": { "parser": "json" } }
+    { "files": [".lintstagedrc"], "options": { "parser": "json" } },
+    { "files": ".npmrc", "options": { "parser": "markdown" } }
   ],
   "printWidth": 100,
   "singleQuote": true,

@@ -6,7 +6,7 @@ const chalk = require('chalk');
 const path = require('path');
 const yargs = require('yargs');
 
-async function start() {
+(async function start() {
   const argv = process.argv.slice(2);
   const header = 'Development framework by and for the Core Team.';
   const learnMore = 'Read the manual at https://core.lifion.oneadp.com/libs/core-commons';
@@ -29,6 +29,4 @@ async function start() {
       'Options:': chalk.bold('OPTIONS')
     })
     .parse();
-}
-
-start();
+})();

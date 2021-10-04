@@ -1,6 +1,8 @@
 {
   "extends": "./shared/eslint.json",
   "rules": {
-    "global-require": "off"
+    "global-require": "off",
+    "no-console": "off",
+    "no-process-exit": "off"
   }
 }
