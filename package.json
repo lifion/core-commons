@@ -29,12 +29,14 @@
     "node": ">=14.18.0"
   },
   "scripts": {
+    "check-types": "./bin/cli.js",
     "eslint": "./bin/cli.js",
     "prepare": "./bin/cli.js",
     "prettier": "./bin/cli.js",
     "test": "./bin/cli.js"
   },
   "dependencies": {
+    "@tsconfig/node14": "^1.0.1",
     "auto-changelog": "^2.3.0",
     "chalk": "^4.1.2",
     "check-engines": "^1.5.0",
@@ -46,8 +48,11 @@
     "jsdoc-to-markdown": "^7.0.1",
     "merge-options": "^3.0.4",
     "prettier": "^2.4.1",
+    "typescript": "^4.4.3",
     "yargs": "^17.2.1",
     "zx": "^4.2.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/jsdoc-to-markdown": "^7.0.1"
+  }
 }
