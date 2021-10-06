@@ -1,7 +1,7 @@
 {
   "name": "core-commons",
   "version": "1.0.0-alpha.0",
-  "description": "Lifion's development setup in one command for our public Node.js projects.",
+  "description": "Lifion's development setup in one command for public Node.js projects.",
   "author": "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
   "maintainers": [
     "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
@@ -29,6 +29,7 @@
     "node": ">=14.18.0"
   },
   "scripts": {
+    "build-types": "./bin/cli.js",
     "check-types": "./bin/cli.js",
     "eslint": "./bin/cli.js",
     "prepare": "./bin/cli.js",
@@ -51,8 +52,5 @@
     "typescript": "^4.4.3",
     "yargs": "^17.2.1",
     "zx": "^4.2.0"
-  },
-  "devDependencies": {
-    "@types/jsdoc-to-markdown": "^7.0.1"
   }
 }

@@ -6,18 +6,19 @@ const chalk = require('chalk');
 const path = require('path');
 const yargs = require('yargs');
 
+const { description, homepage } = require('../package.json');
+
 (async function start() {
   const argv = process.argv.slice(2);
-  const header = 'Development framework by and for the Core Team.';
-  const learnMore = 'Read the manual at https://core.lifion.oneadp.com/libs/core-commons';
+  const learnMore = `Read the manual at ${homepage}`;
   const { npm_lifecycle_event: lifecycleEvent } = process.env;
 
-  if (lifecycleEvent) {
+  if (argv.length === 0 && lifecycleEvent) {
     argv.push(lifecycleEvent);
   }
 
   yargs(argv)
-    .usage(`${header}\n\n${chalk.bold('USAGE')}\n  $0 <command> [options]`)
+    .usage(`${description}\n\n${chalk.bold('USAGE')}\n  $0 <command> [options]`)
     .epilogue(`${chalk.bold('LEARN MORE')}\n  ${learnMore}`)
     .commandDir(path.resolve(__dirname, '../lib/commands'))
     .demandCommand()
