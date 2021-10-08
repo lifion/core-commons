@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/eslintrc.json",
   "extends": "lifion",
-  "ignorePatterns": ["coverage", "node_modules", "package-lock.json", "reports"],
+  "ignorePatterns": ["coverage", "node_modules", "package-lock.json"],
   "rules": {
     "jsdoc/require-jsdoc": "error"
   },
