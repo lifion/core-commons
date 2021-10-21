@@ -13,8 +13,12 @@ const { description, homepage } = require('../package.json');
   const learnMore = `Read the manual at ${homepage}`;
   const { npm_lifecycle_event: lifecycleEvent } = process.env;
 
-  if (argv.length === 0 && lifecycleEvent) {
-    argv.push(lifecycleEvent);
+  if (lifecycleEvent) {
+    argv.splice(0, 0, lifecycleEvent);
+  }
+
+  if (argv.length > 1) {
+    argv.splice(1, 0, '--');
   }
 
   yargs(argv)
