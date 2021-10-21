@@ -3,6 +3,12 @@ on:
   push:
     branches:
       - main
+  workflow_call:
+    secrets:
+      CODECOV_TOKEN:
+        required: true
+      NPM_AUTH_TOKEN:
+        required: true
 jobs:
   install-and-check:
     name: Install & Check
