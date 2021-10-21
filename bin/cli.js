@@ -13,7 +13,7 @@ const { description, homepage } = require('../package.json');
   const learnMore = `Read the manual at ${homepage}`;
   const { npm_lifecycle_event: lifecycleEvent } = process.env;
 
-  if (lifecycleEvent) {
+  if ((argv.length === 0 || argv[0].startsWith('--')) && lifecycleEvent) {
     argv.splice(0, 0, lifecycleEvent);
   }
 
