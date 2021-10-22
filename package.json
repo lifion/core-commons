@@ -4,6 +4,7 @@
   "description": "Lifion's development setup in one command for public Node.js projects.",
   "author": "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
   "maintainers": [
+    "Anson Lam <Anson.Lam@ADP.com>",
     "Edgardo Avilés-López <Edgardo.Aviles@ADP.com>",
     "Jenny Eckstein <Jenny.Eckstein@ADP.com>"
   ],
@@ -29,7 +30,7 @@
     "!**/*.test.js"
   ],
   "engines": {
-    "node": ">=14.18.0"
+    "node": ">=14.18.1"
   },
   "scripts": {
     "build-docs": "./bin/cli.js",
