@@ -8,7 +8,7 @@ on:
       CODECOV_TOKEN:
         required: false
       NPM_AUTH_TOKEN:
-        required: true
+        required: false
 jobs:
   install-and-check:
     name: Install & Check
