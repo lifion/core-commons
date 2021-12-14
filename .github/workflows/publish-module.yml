@@ -6,7 +6,7 @@ on:
   workflow_call:
     secrets:
       CODECOV_TOKEN:
-        required: false
+        required: true
       NPM_AUTH_TOKEN:
         required: false
 jobs:
