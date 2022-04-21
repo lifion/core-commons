@@ -30,7 +30,7 @@
     "!**/*.test.js"
   ],
   "engines": {
-    "node": ">=14.18.1"
+    "node": ">=14.19.1"
   },
   "scripts": {
     "build-docs": "./bin/cli.js",
@@ -47,7 +47,7 @@
   "dependencies": {
     "@tsconfig/node14": "^1.0.1",
     "auto-changelog": "^2.3.0",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.1",
     "check-engines": "^1.5.0",
     "cosmiconfig": "^7.0.1",
     "env-var": "^7.0.1",

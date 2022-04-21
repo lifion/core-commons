@@ -2,13 +2,14 @@
 
 'use strict';
 
-const chalk = require('chalk');
 const path = require('path');
 const yargs = require('yargs');
 
 const { description, homepage } = require('../package.json');
 
 (async function start() {
+  const { default: chalk } = await import('chalk');
+
   const argv = process.argv.slice(2);
   const learnMore = `Read the manual at ${homepage}`;
   const { npm_lifecycle_event: lifecycleEvent } = process.env;
