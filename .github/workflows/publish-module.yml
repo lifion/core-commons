@@ -5,13 +5,11 @@ on:
       - main
   workflow_call:
     secrets:
-      CODECOV_TOKEN:
-        required: true
       NPM_AUTH_TOKEN:
         required: true
 jobs:
-  install-and-check:
-    name: Install & Check
+  check-and-publish:
+    name: Check & Publish
     runs-on: ubuntu-latest
     steps:
       - name: Clone repository
@@ -20,7 +18,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           check-latest: true
-          node-version: '14'
+          node-version: '16'
       - name: Install
         run: npm ci --loglevel=error
         env:
@@ -28,26 +26,9 @@ jobs:
       - name: Run linter
         run: npm run eslint
       - name: Run tests
-        run: npm test
+        run: npm test -- --ci --runInBand
         env:
-          CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
-  npm-publish:
-    name: NPM Publish
-    needs: install-and-check
-    runs-on: ubuntu-latest
-    steps:
-      - name: Clone repository
-        uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          check-latest: true
-          node-version: '14'
-          registry-url: 'https://registry.npmjs.org'
-      - name: Install
-        run: npm ci --loglevel=error
-        env:
-          DISABLE_OPENCOLLECTIVE: true
+          CI: true
       - name: Publish
         run: npm publish
         env:
