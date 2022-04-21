@@ -5,7 +5,6 @@
     "no-bitwise": "off",
     "no-console": "off",
     "no-process-exit": "off",
-    "node/no-unsupported-features/es-syntax": ["error", { "ignores": ["dynamicImport"] }],
     "unicorn/no-process-exit": "off"
   }
 }
