@@ -33,16 +33,16 @@
     "node": ">=14.19.1"
   },
   "scripts": {
-    "build-docs": "./bin/cli.js",
-    "build-types": "./bin/cli.js",
-    "check-types": "./bin/cli.js",
-    "clean-types": "./bin/cli.js",
-    "eslint": "./bin/cli.js",
-    "prepare": "./bin/cli.js",
+    "build-docs": "node ./bin/cli.js",
+    "build-types": "node ./bin/cli.js",
+    "check-types": "node ./bin/cli.js",
+    "clean-types": "node ./bin/cli.js",
+    "eslint": "node ./bin/cli.js",
+    "prepare": "node ./bin/cli.js",
     "prepublishOnly": "npm run build-types && npm run prettier",
-    "prettier": "./bin/cli.js",
-    "test": "./bin/cli.js",
-    "version": "./bin/cli.js"
+    "prettier": "node ./bin/cli.js",
+    "test": "node ./bin/cli.js",
+    "version": "node ./bin/cli.js"
   },
   "dependencies": {
     "@tsconfig/node14": "^1.0.3",
