@@ -1,6 +1,6 @@
 {
   "name": "core-commons",
-  "version": "1.0.0-alpha.7",
+  "version": "1.0.0",
   "description": "Lifion's development setup in one command for public Node.js projects.",
   "author": "Edgardo Avilés-López <eaviles@gmail.com>",
   "maintainers": [
