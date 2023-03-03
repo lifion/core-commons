@@ -5,6 +5,7 @@
     "no-bitwise": "off",
     "no-console": "off",
     "no-process-exit": "off",
-    "unicorn/no-process-exit": "off"
+    "unicorn/no-process-exit": "off",
+    "node/shebang": "off"
   }
 }
